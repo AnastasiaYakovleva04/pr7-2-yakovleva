@@ -1,9 +1,9 @@
-fun main(args: Array<String>) {
+fun main() {
     try {
         print("Введите x: ")
-        val x: Double = readln()!!.toDouble()
+        val x: Double = readln().toDouble()
         print("Введите y: ")
-        val y: Double = readln()!!.toDouble()
+        val y: Double = readln().toDouble()
         val q: Int
         when {
             (x>0 && y>0) -> q = 1
@@ -13,7 +13,7 @@ fun main(args: Array<String>) {
             else -> q = 0
         }
         when (q){
-            0 -> println("Точка в начале координат")
+            0 -> println("Точка в начале координат или на координатных осях")
             else -> println("Точка в $q четверти")
         }
     }

@@ -1,13 +1,13 @@
-fun main(args: Array<String>) {
+fun main() {
     try {
         print("Введите число: ")
-        var x: Int = readln()!!.toInt()
+        var x: Int = readln().toInt()
         print("Введите число: ")
-        val y: Int = readln()!!.toInt()
+        val y: Int = readln().toInt()
         print("Введите число: ")
-        val m: Int = readln()!!.toInt()
+        val m: Int = readln().toInt()
         print("Введите число: ")
-        val n: Int = readln()!!.toInt()
+        val n: Int = readln().toInt()
         val dif = x-y
         val div = m%n
         when{

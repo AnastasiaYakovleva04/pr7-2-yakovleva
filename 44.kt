@@ -1,22 +1,21 @@
-fun main(args: Array<String>) {
+fun main() {
     try {
         print("Введите число: ")
-        var n1: Int = readln()!!.toInt()
+        val n1: UInt = readln().toUInt()
         print("Введите число: ")
-        val n2: Int = readln()!!.toInt()
+        val n2: UInt = readln().toUInt()
         print("Введите число: ")
-        val n3: Int = readln()!!.toInt()
-        var min: Int =0
+        val n3: UInt = readln().toUInt()
+        var min: UInt = 0u
         when {
             (n1<n2 && n1<n3) ->  min = n1
             (n2<n1 && n2<n3) ->  min = n2
-            (n3<n2 && n3<n1) -> min = n3
+            else -> min = n3
         }
         when {
-            min<10 -> println("Есть хорошая группа")
+            min<10u -> println("Есть хорошая группа")
             else -> println("Хорошей группы нет")
         }
-
     }
     catch (e: NumberFormatException){
         println("Неверный формат данных")
